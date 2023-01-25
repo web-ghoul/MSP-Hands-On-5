@@ -1,0 +1,544 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: ease-in-out all .3s;
+}
+
+body {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.contain {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+main .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: stretch;
+    gap: 50px;
+}
+
+header .contain {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+header .contain h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+header .contain h1 span {
+    color: #ff4c4c;
+}
+
+section .contain {
+    display: grid;
+    align-items: flex-start;
+    justify-content: space-between;
+    grid-template-columns: 25% 1fr;
+    gap: 30px;
+}
+
+section .contain .tool-bar {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+}
+
+section .contain .tool-bar .head {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+section .contain .tool-bar ul {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+section .contain .tool-bar ul li {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+section .contain .tool-bar ul li label:hover,
+section .contain .tool-bar ul li:hover {
+    color: #ff4c4c;
+    cursor: pointer;
+}
+
+section .contain .tool-bar .price-control {
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    gap: 20px;
+}
+
+section .contain .tool-bar .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .contain .tool-bar input[type='range'] {
+    background-color: #ff4c4c;
+    border: solid 1px #ff4c4c;
+    border-radius: 8px;
+    height: 10px;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+section .contain .tool-bar .price h3 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+section .contain .tool-bar .price span {
+    font-size: 20px;
+}
+
+section .contain .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+section .contain .boxes .box {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: calc(90% / 3);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 20px;
+}
+
+section .contain .boxes .box .info {
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+section .contain .boxes .box picture {
+    width: 100%;
+}
+
+section .contain .boxes .box picture img {
+    width: 100%;
+}
+
+section .contain .boxes .box .pro-name {
+    font-size: 27px;
+    font-weight: 800;
+}
+
+section .contain .boxes .box.off {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    gap: 20px;
+    width: calc(190% / 3);
+}
+
+section .contain .boxes .box.off .info .sale {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+section .contain .boxes .box.off .info .sale span:last-child {
+    color: #ff4c4c;
+}
+
+section .contain .boxes .box.off .info .btns {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    gap: 10px;
+}
+
+section .contain .boxes .box.off .info .btns button {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #ff4c4c;
+    color: #fff;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+footer .contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    font-weight: 800;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+footer .contain h1 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+footer .contain span {
+    color: #ff4c4c;
+}
+
+@media(max-width:1200px) {
+    .contain {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    main .container {
+        justify-content: stretch;
+        gap: 40px;
+    }
+    header .contain {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    header .contain h1 {
+        font-size: 40px;
+    }
+    section .contain {
+        grid-template-columns: 25% 1fr;
+        gap: 25px;
+    }
+    section .contain .tool-bar {
+        display: grid;
+        gap: 18px;
+        padding: 18px;
+    }
+    section .contain .tool-bar .head {
+        font-size: 28px;
+    }
+    section .contain .tool-bar ul {
+        display: grid;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+    section .contain .tool-bar ul li {
+        font-size: 18px;
+        gap: 8px;
+    }
+    section .contain .tool-bar .price-control {
+        gap: 18px;
+    }
+    section .contain .tool-bar .price h3 {
+        font-size: 28px;
+    }
+    section .contain .tool-bar .price span {
+        font-size: 18px;
+    }
+    section .contain .boxes {
+        gap: 28px;
+    }
+    section .contain .boxes .box {
+        gap: 10px;
+        padding: 18px;
+    }
+    section .contain .boxes .box .info {
+        gap: 10px;
+    }
+    section .contain .boxes .box .pro-name {
+        font-size: 25px;
+    }
+    section .contain .boxes .box.off {
+        padding: 8px;
+        gap: 18px;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    section .contain .boxes .box.off .info .sale {
+        gap: 5px;
+        font-size: 20px;
+    }
+    section .contain .boxes .box.off .info .btns {
+        gap: 8px;
+    }
+    section .contain .boxes .box.off .info .btns button {
+        padding: 6px;
+        font-size: 18px;
+    }
+    footer .contain {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    footer .contain h1 {
+        font-size: 28px;
+    }
+}
+
+@media(max-width:992px) {
+    .contain {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    main .container {
+        justify-content: stretch;
+        gap: 35px;
+    }
+    header .contain {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    header .contain h1 {
+        font-size: 32px;
+    }
+    section .contain {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    section .contain .tool-bar {
+        display: grid;
+        gap: 18px;
+        padding: 18px;
+    }
+    section .contain .tool-bar .head {
+        font-size: 28px;
+    }
+    section .contain .tool-bar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    section .contain .tool-bar ul li {
+        font-size: 15px;
+        gap: 6px;
+    }
+    section .contain .tool-bar .price-control {
+        gap: 15px;
+    }
+    section .contain .tool-bar .price h3 {
+        font-size: 25px;
+    }
+    section .contain .tool-bar .price span {
+        font-size: 15px;
+    }
+    section .contain .boxes {
+        gap: 25px;
+    }
+    section .contain .boxes .box {
+        gap: 8px;
+        padding: 15px;
+    }
+    section .contain .boxes .box .info {
+        gap: 8px;
+    }
+    section .contain .boxes .box .pro-name {
+        font-size: 22px;
+    }
+    section .contain .boxes .box.off {
+        padding: 6px;
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section .contain .boxes .box.off .info .sale {
+        gap: 5px;
+        font-size: 20px;
+    }
+    section .contain .boxes .box.off .info .btns {
+        gap: 8px;
+    }
+    section .contain .boxes .box.off .info .btns button {
+        padding: 5px;
+        font-size: 15px;
+    }
+    footer .contain {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    footer .contain h1 {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:768px) {
+    .contain {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    main .container {
+        justify-content: center;
+        gap: 30px;
+    }
+    header .contain {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    header .contain h1 {
+        font-size: 30px;
+    }
+    section .contain {
+        gap: 18px;
+    }
+    section .contain .tool-bar {
+        gap: 15px;
+        padding: 15px;
+    }
+    section .contain .tool-bar .head {
+        font-size: 25px;
+    }
+    section .contain .tool-bar ul {
+        gap: 18px;
+    }
+    section .contain .tool-bar ul li {
+        font-size: 18px;
+    }
+    section .contain .tool-bar .price-control {
+        gap: 12px;
+    }
+    section .contain .tool-bar .price h3 {
+        font-size: 22px;
+    }
+    section .contain .tool-bar .price span {
+        font-size: 12px;
+    }
+    section .contain .boxes {
+        gap: 20px;
+    }
+    section .contain .boxes .box {
+        gap: 6px;
+        padding: 12px;
+    }
+    section .contain .boxes .box .info {
+        gap: 6px;
+    }
+    section .contain .boxes .box .pro-name {
+        font-size: 20px;
+    }
+    section .contain .boxes .box.off {
+        padding: 5px;
+        gap: 12px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section .contain .boxes .box.off .info .sale {
+        font-size: 18px;
+    }
+    section .contain .boxes .box.off .info .btns {
+        gap: 6px;
+    }
+    section .contain .boxes .box.off .info .btns button {
+        font-size: 12px;
+    }
+    footer .contain {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    footer .contain h1 {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:640px) {
+    .contain {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    main .container {
+        gap: 20px;
+    }
+    header .contain {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    header .contain h1 {
+        font-size: 25px;
+    }
+    section .contain {
+        gap: 15px;
+    }
+    section .contain .tool-bar {
+        gap: 12px;
+        padding: 12px;
+    }
+    section .contain .tool-bar .head {
+        font-size: 20px;
+    }
+    section .contain .tool-bar ul {
+        gap: 15px;
+    }
+    section .contain .tool-bar ul li {
+        font-size: 15px;
+    }
+    section .contain .tool-bar .price-control {
+        gap: 10px;
+    }
+    section .contain .tool-bar .price h3 {
+        font-size: 20px;
+    }
+    section .contain .tool-bar .price span {
+        font-size: 10px;
+    }
+    section .contain .boxes {
+        gap: 18px;
+    }
+    section .contain .boxes .box {
+        gap: 5px;
+        padding: 10px;
+    }
+    section .contain .boxes .box .info {
+        gap: 5px;
+    }
+    section .contain .boxes .box .pro-name {
+        font-size: 18px;
+    }
+    section .contain .boxes .box.off {
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section .contain .boxes .box.off .info .sale {
+        font-size: 15px;
+    }
+    section .contain .boxes .box.off .info .btns {
+        gap: 5px;
+    }
+    section .contain .boxes .box.off .info .btns button {
+        font-size: 15px;
+    }
+    footer .contain {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    footer .contain h1 {
+        font-size: 20px;
+    }
+}
